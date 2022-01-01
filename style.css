@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #0C0C0C;   
+    color: #F9F9F9;  
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #F9F9F9; 
+}
+
+.banner {
+    background-image: url(img/image_batman.png);
+    height: 1280px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.maxwidth {
+    width: 95%;
+    max-width: 1790px;
+    margin: 0 auto;
+}
+ 
+.container_nav {
+    position: relative;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+
+#nome_logo {
+    float: left;
+    background: rgb(255,166,52);
+    background: linear-gradient(90deg, rgba(255,166,52,1) 0%, rgba(255,38,122,1) 100px);  
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.area_navegacao {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ 
+.area_navegacao a {
+    font-size: 24px;
+}
+
+.area_navegacao img, .area_navegacao a {
+    float: left;
+}
+
+.area_navegacao img {
+    height: 33px;
+}
+
+.area_navegacao img, .area_navegacao a {
+    margin-left: 70px;
+}
+
+.area_navegacao img:nth-child(1) {
+    margin-left: 0px;
+}
+
+.area_navegacao .menu img {
+    display: none;
+}
+
+.container_namefilmebanner {
+    height: 70%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.container_mainfilme {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container_mainfilme h3 {
+    background-color: #181818;
+    padding: 3px;
+    border-radius: 0px 8px;    display: inline-block;
+    width: 49px;
+    height: 24px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    color: #FFA634;
+    margin-bottom: 25px;
+}
+
+.stars {
+    position: relative;
+    width: 285px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.stars img {
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+.stars img:nth-child(6) {
+    margin-left: 16px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.stars span {
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 35px;
+    margin-left: 7px;
+    position: absolute;
+    right: 0;
+}
+
+.container_mainfilme h1 {
+    font-size: 76px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.container_mainfilme p {
+    font-size: 25px;
+    font-weight: 400;
+    max-width: 38%;
+    margin-bottom: 60px;
+}
+
+.container_button {
+    width: 286px;
+    height: 56px;
+    background-color: #FFA634;
+    border-radius: 4px;
+    color:#181818;
+    position: relative;
+}
+
+.area_button {
+    width: 159px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.area_button span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container_catalogo {
+    margin-bottom: 70px;
+} 
+
+.container_catalogofilmes {
+    overflow: hidden;
+}
+
+.container_catalogo h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.container_catalogo h2::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 5px;
+    background-color: #FFA634;
+}
+
+.container_filme h4 {    
+    background-color: #141414;
+    display: block;
+    width: 80px;
+    padding: 3px;
+    border-radius: 0px 8px;   
+    height: 24px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    color: #FFA634;
+    margin-bottom: 10px;
+}
+
+.container_filme h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container_filme {
+    width: 300px;
+    height: 440px;
+    margin-right: 72px;
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.filme5 {
+    margin-right: 0px;
+}
+
+.filme1 {
+    background-image: url(img/shang-chi.svg);
+    background-repeat: no-repeat;
+}
+
+.filme2 {
+    background-image: url(img/wisadragon.svg);
+    background-repeat: no-repeat;
+}
+
+.filme3 {
+    background-image: url(img/loki.svg);
+    background-repeat: no-repeat;
+}
+
+.filme4 {
+    background-image: url(img/homemaranha.svg);
+    background-repeat: no-repeat;
+}
+
+.filme5 {
+    background-image: url(img/thewitcher.svg);
+    background-repeat: no-repeat;
+}
+
+.container_namefilme {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.container_rodape {
+    overflow: hidden;
+    position: relative;
+    padding: 30px 0px;
+}
+
+.container_rodape h2 {
+    font-size: 40px;
+    height: 60px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    float: left;
+}
+
+.container_socialmidia {
+    height: 60px;
+    float: right;
+}
+
+.container_socialmidia img {
+    width: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 80px;
+}
+
+@media (max-width:1870px) { 
+   .container_filme {
+       margin-right: 5em;
+    }
+    .container_filme {
+        margin-right: 10em;
+    }
+}
+
+@media (max-width:1284px) { 
+    .container_filme {
+        margin-right: 5em;
+    }
+    .container_mainfilme p {
+        max-width: 50%;
+    }
+}
+
+@media (max-width:1195px) { 
+    .container_filme {
+        margin-right: 2em;
+    }
+}
+
+@media (max-width:1049px) { 
+    .container_filme {
+        margin-right: 1em;
+    }
+}
+
+@media (max-width:995px) { 
+    .container_filme {
+        float: unset;
+        width: 100%;
+        text-align: center;
+    }
+    .container_filme h4 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .container_namefilme {
+        padding-left: 0px;
+    }
+    .filme1,.filme2,.filme3,.filme4,.filme5 {
+        background-position: center;
+    }
+    .container_mainfilme p {
+        max-width: 90%;
+    }
+    #nome_logo {
+        width: 100%;
+        display: block;
+        background-position: red;
+    }
+    .area_navegacao {
+        position: relative;       
+    }
+}
+
+@media (max-width:610px) { 
+    .container_namefilmebanner {
+        height: 60%;
+    }
+    .container_mainfilme p {
+        font-size: 18px;
+        max-width: 90%;
+    }
+    .area_navegacao img, .area_navegacao a {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:568px) { 
+    .banner {
+        background-position-x: -980px;
+    }
+}
+
+@media (max-width:463px) { 
+    .container_rodape h2 {
+        float: unset;
+        text-align: center;
+    }
+    .container_socialmidia {
+        height: 60px;
+        width: 147px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        float: unset;
+      
+    }
+    .container_socialmidia img {
+        width: 30px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 12px;  
+    }
+}
+
+@media (max-width:420px) { 
+    .area_navegacao img, .area_navegacao a {
+        margin-left: 8px;
+    }
+}
+
+
+
+
+
